@@ -17,13 +17,11 @@ namespace Negocio
         {
             get { return lector; }
         }
-
         public AccesoDatos()
         {
             conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security=true");
             comando = new SqlCommand();
         }
-
         public void setearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
@@ -55,7 +53,6 @@ namespace Negocio
                 throw ex;
             }
         }
-
         public void setearParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);

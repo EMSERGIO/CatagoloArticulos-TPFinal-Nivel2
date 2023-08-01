@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,6 +59,18 @@
     <Compile Include="frmAltaProductos.Designer.cs">
       <DependentUpon>frmAltaProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrimera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimera.Designer.cs">
+      <DependentUpon>frmPrimera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerDetalle.Designer.cs">
+      <DependentUpon>frmVerDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +78,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAltaProductos.resx">
       <DependentUpon>frmAltaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimera.resx">
+      <DependentUpon>frmPrimera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerDetalle.resx">
+      <DependentUpon>frmVerDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
